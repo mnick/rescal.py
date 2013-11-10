@@ -73,7 +73,7 @@ if __name__ == '__main__':
 
     # Do cross-validation
     FOLDS = 10
-    IDX = range(SZ)
+    IDX = list(range(SZ))
     shuffle(IDX)
 
     fsz = int(SZ / FOLDS)

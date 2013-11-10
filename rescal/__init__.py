@@ -40,4 +40,4 @@ For a full description of the algorithm see:
        WWW 2012, Lyon, France
 """
 
-from rescal import als as rescal_als
+from .rescal import als as rescal_als

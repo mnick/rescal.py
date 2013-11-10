@@ -167,7 +167,7 @@ def als(X, rank, **kwargs):
         _, A = eigsh(csr_matrix(S, dtype=dtype, shape=(n, n)), rank)
         A = array(A, dtype=dtype)
     else:
-        raise 'Unknown init option ("%s")' % ainit
+        raise ValueError('Unknown init option ("%s")' % ainit)
 
     # ------- initialize R and Z ---------------------------------------------
     R = _updateR(X, A, lmbdaR)
