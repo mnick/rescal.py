@@ -34,11 +34,11 @@ logging.basicConfig(level=logging.INFO)
 T = loadmat('data/alyawarra.mat')['Rs']
 X = [lil_matrix(T[:, :, k]) for k in range(T.shape[2])]
 
-# Decompose tensor using CP-ALS
+# Decompose tensor using RESCAL-ALS
 A, R, fit, itr, exectimes = rescal_als(X, 100, init='nvecs', lambda_A=10, lambda_R=10)
 ```
 
-For more examples on the usage of RESCAL, please see the `examples` directory in the source tree.
+For more examples on the usage of RESCAL, please see the [examples](examples) directory in the source tree.
 
 
 References
