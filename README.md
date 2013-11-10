@@ -40,7 +40,22 @@ A, R, fit, itr, exectimes = rescal_als(X, 100, init='nvecs', lambda_A=10, lambda
 
 For more examples on the usage of RESCAL, please see the `examples` directory in the source tree.
 
+
+References
+----------
 If you use `rescal.py` in your research, please cite
+
+	Maximilian Nickel, Volker Tresp, Hans-Peter-Kriegel,
+	"A Three-Way Model for Collective Learning on Multi-Relational Data",
+	Proceedings of the 28th International Conference on Machine Learning (ICML'11), 
+	809--816, ACM, Bellevue, WA, USA, 2011
+
+or
+
+	Maximilian Nickel, Volker Tresp, Hans-Peter-Kriegel,
+    "Factorizing YAGO: Scalable Machine Learning for Linked Data"
+	Proceedings of the 21st International Conference on World Wide Web (WWW'12),
+	271--280, ACM, Lyon, France, 2012
 
 
 Install
@@ -58,18 +73,6 @@ To install in development mode
 
     python setup.py develop
 
-
-References
-----------
-For a full description of the algorithm see:
-.. [1] Maximilian Nickel, Volker Tresp, Hans-Peter-Kriegel,
-       "A Three-Way Model for Collective Learning on Multi-Relational Data",
-	   28th International Conference on Machine Learning (ICML'11), 809--816,
-       ACM, Bellevue, WA, USA, 2011
-
-.. [2] Maximilian Nickel, Volker Tresp, Hans-Peter-Kriegel,
-       "Factorizing YAGO: Scalable Machine Learning for Linked Data"
-       WWW 2012, Lyon, France
 
 Authors
 -------
