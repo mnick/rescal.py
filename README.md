@@ -1,7 +1,7 @@
 RESCAL
 ======
 
-This package provides routines to compute various forms of
+This module provides standalone routines to compute various forms of
 the RESCAL tensor factorization.
 
 RESCAL factors a (usually sparse) three-way tensor X such that each
@@ -13,9 +13,13 @@ The frontal slices of X are quadratic, possibly asymmetric N x N matrices.
 Usually, these matrices correspond to the sparse adjacency matrices of the 
 relational graph for a particular relation in a multi-relational data set.
 
+A copy of this standalone module of RESCAL is also included in the [scikit-tensor](https://github.com/mnick/scikit-tensor) libray.
+
+
 Dependencies
 ------------
 The required dependencies to build the software are `Numpy >= 1.3`, `SciPy >= 0.7`.
+
 
 Usage
 -----
@@ -80,6 +84,7 @@ Maximilian Nickel <mnick AT mit DOT edu>
 
 + <http://twitter.com/mnick>
 + <http://github.com/mnick>
+
 
 License
 -------
